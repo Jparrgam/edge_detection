@@ -48,10 +48,10 @@ class PaperRectangle : View {
         rectPaint.strokeCap = Paint.Cap.ROUND      // set the paint cap to round too
         rectPaint.pathEffect = CornerPathEffect(10f)
 
-        circlePaint.color = Color.WHITE
+        circlePaint.color = Color.parseColor("#822ad2")
         circlePaint.isDither = true
         circlePaint.isAntiAlias = true
-        circlePaint.strokeWidth = 4F
+        circlePaint.strokeWidth = 3F
         circlePaint.style = Paint.Style.STROKE
     }
 
