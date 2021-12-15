@@ -46,7 +46,6 @@ class ScanActivity : BaseActivity(), IScanView.Proxy {
     }
 
     override fun prepare() {
-        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 
         if (!OpenCVLoader.initDebug()) {
             Log.i(TAG, "loading opencv error, exit")
