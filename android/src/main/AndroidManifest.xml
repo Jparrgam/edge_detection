@@ -13,7 +13,7 @@
             android:name=".scan.ScanActivity"
             android:label="@string/scan"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
         <activity
             android:name=".crop.CropActivity"
             android:label="@string/crop"
