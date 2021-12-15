@@ -2,6 +2,7 @@ package com.sample.edgedetection.scan
 
 import android.app.Activity
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
 import android.media.ExifInterface
 import android.net.Uri
@@ -45,6 +46,8 @@ class ScanActivity : BaseActivity(), IScanView.Proxy {
     }
 
     override fun prepare() {
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
+
         if (!OpenCVLoader.initDebug()) {
             Log.i(TAG, "loading opencv error, exit")
             finish()
