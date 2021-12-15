@@ -7,16 +7,17 @@
     <application
         android:allowBackup="true"
         android:requestLegacyExternalStorage="true"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:supportsRtl="true">
         <activity
             android:name=".scan.ScanActivity"
             android:label="@string/scan"
             android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="landscape" />
         <activity
             android:name=".crop.CropActivity"
             android:label="@string/crop"
+            android:theme="@style/AppTheme"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
     </application>
